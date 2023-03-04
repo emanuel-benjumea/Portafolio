@@ -1,0 +1,43 @@
+*{
+    
+    background-color: linen;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.inicio .imagen{
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.inicio h2 ,.inicio p{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+.inicio {
+    display: flex;
+    width: 100%;
+}
+.inicio{
+    text-align: left;
+}
+
+.skills, .tableskills{
+    text-align: center;
+    margin: 1px auto;
+}
+
+.tableskills th{
+    text-align: left;
+    
+}
+.tableskills input[type="range"]{
+    color: blue;
+}
+.tableskills table{
+    border: 1px auto black ;
+}
+
