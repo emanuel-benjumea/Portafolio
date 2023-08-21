@@ -1,57 +1,265 @@
-*{
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  z-index: 1000; 
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+/* secciones */
+section {
+  padding: 2rem 0; 
+  text-align: center;
+}
+
+section h1, section h2 {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* contacto */
+.contact-section {
+  background-color: #f8f8f8;
+}
+
+.contact-section h2, .contact-section p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-social a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.contact-social i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.contact-logo img {
+  max-width: 45%;
+}
+
+/* habilidades */
+.skills-container {
+  display: grid;
+  grid-template-columns: auto;
+ 
+}
+
+.skill {
+  flex: 1 1 calc(50% - 1rem); 
+  
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.274);
+  transition: transform 0.3s ease;
+  
+  margin: 20px 200px 20px 200px;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  color: #333;
+  font-weight: bold;
+}
+
+.linkscursos{
+  margin: 0 50px 0 50px;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  text-align: left;
+  
+ 
+}
+
+.linkprogramas{
+
+
+
+  justify-content: space-between;
+}
+
+.estiloslinks {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease; 
+}
+
+.estiloslinks:hover {
+  color: #808080;
+}
+
+
+/* Animaciones de imágenes */
+.about-image img,
+.skill img {
+  height: auto;
+  display: grid;
+  
+  border-radius: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  height: 230px;
+}
+
+.about-image img:hover,
+.skill img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.about-section {
+  background-color: #f8f8f8;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.about-image img {
+  height: auto;
+  border-radius: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  height: 230px;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-text p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.contact-social i {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+
+.contact-social h3 {
+  font-size: 1.4rem;
+}
+
+.contact-section p {
+  font-size: 14px;
+}
+
+@media (max-width: 428px) {
+  
+  .about-content {
+    flex-direction: column; 
+  }
+
+  .about-image {
+    margin-right: 0; 
+    margin-bottom: 2rem; 
+  }
+
+  .about-text {
+    text-align: center; 
+  }
+
+  .contact-social i {
+    font-size: 2rem; 
+  }
+
+  .contact-social h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-section{
+    margin-left: 30px;
     
-    background-color: linen;
-    margin-left: 5em;
-    margin-right: 5em;
+  }
+  .contact-logo{
+    margin-left: -30px;
+  }
 }
-
-.inicio .imagen{
-    text-align: center;
-    display: inline-block;
-    width: 40%;
-    margin-left: 0;
-    margin-right: 0;
-}
-.inicio h2 ,.inicio p{
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-}
-.inicio {
-    display: flex;
-    width: 100%;
-}
-.inicio{
-    text-align: left;
-}
-
-.skills, .tableskills{
-    text-align: center;
-    margin: 1px auto;
-}
-
-.tableskills th{
-    text-align: left;
-    
-}
-.tableskills input[type="range"]{
-    color: blue;
-}
-.tableskills table{
-    border: 1px auto black ;
-}
-*{
-    font-size: 20PX;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.uno{
-    width: 300px;
-    height: 300px;
-}
- .dos{
-    width: 300px;
-    height: 400px;
-
-}
-
