@@ -29,7 +29,9 @@ Aquí tienes algunas capturas de pantalla de mi propio portafolio en línea. Est
 ![image](https://github.com/emanuel-benjumea/Portafolio/assets/66340501/84f945f5-4819-4ea5-8aa5-0ddb0a9b69a6)
 ![image](https://github.com/emanuel-benjumea/Portafolio/assets/66340501/50e4c142-6bd2-48cb-ad2d-bb48e13f8694)
 
+O si prefieres, puedes verlo tú mismo en el siguiente enlace:
 
+[Ver mi Portafolio en línea](https://emanuel-benjumea.github.io/Portafolio/)
 
 ### Contáctame
 
